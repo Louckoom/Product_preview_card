@@ -33,7 +33,6 @@ Users should be able to:
 ### Screenshot
 
 ![](images/Screenshot_desktop.jpg)
-
 ![](images/Screenshot_mobile.jpg)
 
 ### Links
