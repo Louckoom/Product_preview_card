@@ -29,7 +29,10 @@
       
 
       <div class="main_image_container">
-        <img src="images/image-product-mobile.jpg" alt="product_image">
+        <picture>
+          <source srcset="images/image-product-desktop.jpg" media="(min-width: 1440px)" alt="product_image_desktop">
+          <img src="images/image-product-mobile.jpg" media="(min-width: 375px)" alt="product_image_desktop">
+        </picture>
       </div>
 
       <div class="main_content">
@@ -66,8 +69,8 @@
     </div>
 
     <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Louckoom</a>.
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Louckoom</a></p>.
     </div>
 
   </main>

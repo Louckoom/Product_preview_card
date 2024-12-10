@@ -9,24 +9,24 @@ $white : hsl(0, 0%, 100%);
     body {
         background-color: $cream;
         margin: 0;
-        padding: 20px;
+        padding: 1.25rem;
     }
     
-    .all_content {
+    .main_card {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-    }
-    .main_card {
         background-color: $white;
         border-radius: 0.7rem;
     }
-
-    .main_image_container img {
-        width: 100%;
-        border-radius: 0.75rem 0.75rem 0 0;
-     }
-
+    .main_image_container {
+        picture {
+            img {
+                width: 100%;
+                border-radius: 0.75rem 0.75rem 0 0;
+             }
+        }
+    }
+    
     .main_content {
         padding: 1.5rem;
     }
@@ -116,6 +116,111 @@ $white : hsl(0, 0%, 100%);
 
 @media (min-width: 1440px) {
     body {
-        background-color: blue;
+        padding: 4rem 24rem;
     }
+    
+    .main_card {
+        flex-direction: row;
+    }
+
+    .main_image_container {
+        picture {
+            img {
+                height: 100%;
+                border-radius: 0.75rem 0 0 0.75rem;
+             }
+        }
+    }
+
+    .main_content {
+        padding: 0rem 2rem;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        
+    }
+    
+    .middle_content_container {
+        
+        display:flex;
+        flex-direction: column;
+        width: auto;
+        gap: 1.5rem;
+
+        h1 {
+            width: 90%;
+            padding: 0;
+            align-items: flex-start;
+        }
+        p {
+            width: 100;
+            font-size: 1.063rem;
+            padding : 0;
+            line-height: 2rem;
+        }
+
+    }
+    .bottom_sell_container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        .price {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+        
+        .price_w_reduc {
+                    p {
+                        font-family: "Fraunces";
+                        font-size: 2.25rem;
+                        font-weight: 700;
+                        margin: 0;
+                        padding: 0;
+                        color: $dark_cyan;
+                    }
+                }
+            .price_wout_reduc {
+                    p {
+                        font-family: "Montserrat";
+                        font-weight: 400;
+                        text-decoration: line-through 0.3px;
+                        color: black;
+                        opacity: 70%;
+                        margin: 0;
+                    }
+                }
+            }
+        .buy_button {
+            padding: 0;
+            button {
+            width: 100%;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            background-color: $dark_cyan;
+            border: 0;
+            font-family: "Montserrat";
+            font-weight: 700;
+            font-size: 1rem;
+            color: $white;
+            border-radius: 0.75rem;
+            }
+        }
+    }
+    .attribution {
+        padding: 1rem 0;
+        
+    }
+    a, p {
+        font-size: 20px;
+        
+    }
+    
+
 }
