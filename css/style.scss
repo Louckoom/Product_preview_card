@@ -1,0 +1,121 @@
+$dark_cyan : hsl(158, 36%, 37%);
+$cream : hsl(30, 38%, 92%);
+$very_dark_blue : hsl(212, 21%, 14%);
+$dark_grayish_blue : hsl(228, 12%, 48%);
+$white : hsl(0, 0%, 100%);
+
+
+@media (min-width:375px) {
+    body {
+        background-color: $cream;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    .all_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main_card {
+        background-color: $white;
+        border-radius: 0.7rem;
+    }
+
+    .main_image_container img {
+        width: 100%;
+        border-radius: 0.75rem 0.75rem 0 0;
+     }
+
+    .main_content {
+        padding: 1.5rem;
+    }
+    
+    .middle_content_container {
+        h2 {
+            font-family: "Montserrat";
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.35rem;
+            font-size: 0.875rem;
+            margin: 0;
+            color: $very_dark_blue;
+            opacity: 70%;
+        }
+        h1 {
+            font-family: "Fraunces";
+            font-weight: 700;
+            margin: 0;
+            padding: 0.75rem 0;
+            font-size: 2rem;
+            line-height: 2.25rem;
+        }
+        p {
+            font-family: "Montserrat";
+            font-weight: 400;
+            color: black;
+            opacity: 70%;
+            margin: 0;
+            font-size: 1rem;
+            padding: 0.65rem 0;
+        }
+
+    }
+    .bottom_sell_container {
+        .price {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        
+        .price_w_reduc {
+                    p {
+                        font-family: "Fraunces";
+                        font-size: 2.25rem;
+                        font-weight: 700;
+                        margin: 0;
+                        padding: 1rem 1.5rem 1rem 0;
+                        color: $dark_cyan;
+                    }
+                }
+            .price_wout_reduc {
+                    p {
+                        font-family: "Montserrat";
+                        font-weight: 400;
+                        text-decoration: line-through 0.3px;
+                        color: black;
+                        opacity: 70%;
+                    }
+                }
+            }
+        .buy_button {
+            padding: 0.25rem 0 0.01rem;
+            button {
+            width: 100%;
+            padding: 0 0.75rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            background-color: $dark_cyan;
+            border: 0;
+            font-family: "Montserrat";
+            font-weight: 700;
+            font-size: 1rem;
+            color: $white;
+            border-radius: 0.75rem;
+            }
+        }
+    }
+    .attribution {
+        padding: 1rem 0;
+    }
+
+
+}
+
+@media (min-width: 1440px) {
+    body {
+        background-color: blue;
+    }
+}
